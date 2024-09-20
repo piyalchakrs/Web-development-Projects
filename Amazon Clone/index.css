@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border:border-box;
+}
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-logo{
+    height: 50px;
+    width: 133px;
+}   
+.logo{
+    background-image: url(amazon-logo.png);
+    background-size: cover;
+    height: 40px;
+    width:85%;
+}
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+/* box2 */
+.add-1{
+    color:#cccccc;
+    font-size: 0.80rem;
+    margin-left: 15px;
+
+}
+.add-2{
+    color:#ffffff;
+    font-size:1rem;
+    margin-left: 3px;
+}
+.add-icon{
+    display:flex;
+    align-items: center;
+}
+/* 3rd box */
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:rgb(224, 193, 20);
+    width : 620px;
+    height : 40px;
+    border-radius : 4px;
+}
+.nav-search :hover{
+    border: 2px solid orange;
+}
+.select-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    height:40px;
+    text-align: center;
+    border-top-left-radius : 4px;
+    border-bottom-left-radius : 4px;
+    border:none;
+}
+.search-amazon{
+    width:100%;
+    font-size: 1rem;
+    border: none;
+}
+.search-icon{
+    width : 45px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color:#0f1111;
+}
+span{
+    font-size: .7rem;
+}
+.nav-second{
+    font-size: .90rem;
+    font-weight:700;
+}
+.nav-cart{
+    font-weight:700;
+}
+.nav-cart:hover{
+    border: 1.5px solid white;
+}
+.nav-flag{
+    border: none;
+}
+.nav-flag:hover{
+    border: 1.5px solid white;
+}
+.bd-photo{
+    height:16px;
+    width: 21.6px;
+}
+.language{
+    justify-content: space-evenly;
+    font-weight:700;
+    display:flex;
+    border: none;
+}
+/* panel box */
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color :#f3f3f3;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-ops p{
+    display : inline;
+    margin-left: 15px;
+    font-size: 1.0rem;
+}
+.panel-ops p:hover{
+    border: 1.5px solid white;
+}
+.panel-ops{
+    width : 70%;
+    font-size : 1rem;
+}
+.panel-deals{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.panel-deals:hover{
+    border: 1.5px solid white;
+}
+/* main part */
+
+.hero-section{
+    background-image: url(background_pic.jpg);
+    background-size: cover;
+    width : 1280px;
+    height : 280px;
+    display : flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-msg{
+    background-color: white;
+    color: black;
+    height : 35px;
+    width : 1000px;
+    /* border: 2px solid black; */
+    display : flex;
+    align-items : center;
+    justify-content: center;
+    font-weight: 300px;
+    font-size:.85rem;
+    margin-bottom : 20px;
+}
+.hero-msg a {
+    color:#007185;
+}
+/* shop section */
+.shop-section{
+    display : flex;
+    justify-content: space-evenly;
+    background-color: #eae7ea;
+}
+.box{
+    /* border : 2px solid black; */
+    height : 350px;
+    width : 22%;
+    background-color : white;
+    padding : 20px 0px 15px;
+    margin-top: 15px;
+}
+
+/* .box2-content{
+    margin-left : 1rem;
+    margin-right : 1rem;
+}
+.box2-content p {
+    color : #007185;
+} */
+.electro{
+    margin-left : 1rem;
+    margin-right : 1rem;
+}
+.electronics{
+    height : 310px;
+    background-size: cover;
+    margin-left : 1rem;
+    margin-right : 1rem;
+}
+.see1{
+    margin-left : 1rem;
+    margin-right : 1rem;
+    color:#007185;
+}
+.shop{
+    margin-left : 1rem;
+    margin-right : 1rem;
+}
+.shopping{
+    height : 320px;
+    background-size: cover;
+    margin-left : 1rem;
+    margin-right : 1rem;
+}
+.see2{
+    margin-left : 1rem;
+    margin-right : 1rem;
+    color:#007185;
+}
+.games{
+    margin-left : 1rem;
+    margin-right : 1rem;
+}
+.games1{
+    height : 290px;
+    background-size: cover;
+    margin-left : 1rem;
+    margin-right : 1rem;
+}
+.see3{
+    margin-left : 1rem;
+    margin-right : 1rem;
+    color:#007185;
+}
+.kitchen{
+    margin-left : 1rem;
+    margin-right : 1rem;
+}
+.kitchen2{
+    height : 315px;
+    background-size: cover;
+    margin-left : 1rem;
+    margin-right : 1rem;
+}
+.see4{
+    margin-left : 1rem;
+    margin-right : 1rem;
+    color:#007185;
+}
