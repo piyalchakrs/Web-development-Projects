@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniClassroom+ | Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <button id="menu-toggle" class="menu-toggle">
+                <span class="material-icons">menu</span>
+            </button>
+            <div class="logo">
+                <span class="material-icons">school</span>
+                <h1>UniClassroom<span class="plus">+</span></h1>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <span class="material-icons">search</span>
+            </div>
+            <button class="icon-btn" id="notifications-btn">
+                <span class="material-icons">notifications</span>
+                <span class="badge">3</span>
+            </button>
+            <div class="user-profile">
+                <div class="avatar">JS</div>
+                <div class="user-dropdown">
+                    <span class="user-name">John Smith</span>
+                    <span class="material-icons">arrow_drop_down</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar" id="sidebar">
+            <ul class="menu">
+                <li class="active">
+                    <a href="dashboard.html">
+                        <span class="material-icons">dashboard</span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="calendar.html">
+                        <span class="material-icons">calendar_today</span>
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="meetings.html">
+                        <span class="material-icons">videocam</span>
+                        <span>Meetings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="chat.html">
+                        <span class="material-icons">chat</span>
+                        <span>Discussions</span>
+                    </a>
+                </li>
+                <li class="menu-divider">
+                    <span>TEACHING</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">co_present</span>
+                        <span>To Teach</span>
+                    </a>
+                </li>
+                <li class="menu-divider">
+                    <span>ENROLLED</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">menu_book</span>
+                        <span>To Study</span>
+                    </a>
+                </li>
+                <li class="menu-divider">
+                    <span>ARCHIVED</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">archive</span>
+                        <span>Archived Classes</span>
+                    </a>
+                </li>
+                <li class="menu-footer">
+                    <a href="#">
+                        <span class="material-icons">settings</span>
+                        <span>Settings</span>
+                    </a>
+                    <a href="index.html">
+                        <span class="material-icons">logout</span>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="page-header">
+                <h2>Dashboard</h2>
+                <div class="action-buttons">
+                    <button class="btn btn-outline" id="join-class-btn">
+                        <span class="material-icons">login</span>
+                        Join Class
+                    </button>
+                    <button class="btn btn-primary" id="create-class-btn">
+                        <span class="material-icons">add</span>
+                        Create Class
+                    </button>
+                </div>
+            </div>
+
+            <section class="upcoming-section">
+                <h3>Upcoming</h3>
+                <div class="upcoming-cards">
+                    <div class="upcoming-card">
+                        <div class="upcoming-header">
+                            <span class="material-icons">assignment</span>
+                            <div class="class-info">
+                                <p class="class-name">Advanced Web Development</p>
+                                <p class="due-date">Due tomorrow at 11:59 PM</p>
+                            </div>
+                        </div>
+                        <div class="upcoming-content">
+                            <h4>Final Project Submission</h4>
+                            <p>Submit your completed e-commerce website with documentation.</p>
+                        </div>
+                    </div>
+                    <div class="upcoming-card">
+                        <div class="upcoming-header">
+                            <span class="material-icons">videocam</span>
+                            <div class="class-info">
+                                <p class="class-name">Data Structures</p>
+                                <p class="due-date">Today at 3:30 PM</p>
+                            </div>
+                        </div>
+                        <div class="upcoming-content">
+                            <h4>Review Session</h4>
+                            <p>Online review session for the upcoming midterm examination.</p>
+                        </div>
+                    </div>
+                    <div class="upcoming-card">
+                        <div class="upcoming-header">
+                            <span class="material-icons">quiz</span>
+                            <div class="class-info">
+                                <p class="class-name">Database Management</p>
+                                <p class="due-date">Wednesday at 5:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="upcoming-content">
+                            <h4>Quiz 3: SQL Queries</h4>
+                            <p>Online quiz covering JOIN operations and subqueries.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="classes-section">
+                <h3>My Classes</h3>
+                <div class="class-cards">
+                    <div class="class-card">
+                        <div class="class-card-header" style="background-color: #1a73e8;">
+                            <h3>Advanced Web Development</h3>
+                            <p>CSE 4353 - Prof. Jennifer Wilson</p>
+                        </div>
+                        <div class="class-card-content">
+                            <p>Final Project due tomorrow</p>
+                            <div class="class-card-actions">
+                                <button class="btn btn-text">
+                                    <span class="material-icons">videocam</span>
+                                    Meet
+                                </button>
+                                <button class="btn btn-text">
+                                    <span class="material-icons">folder</span>
+                                    Files
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="class-card">
+                        <div class="class-card-header" style="background-color: #00c4b4;">
+                            <h3>Data Structures</h3>
+                            <p>CSE 2310 - Prof. Michael Chen</p>
+                        </div>
+                        <div class="class-card-content">
+                            <p>Review session today, 3:30 PM</p>
+                            <div class="class-card-actions">
+                                <button class="btn btn-text">
+                                    <span class="material-icons">videocam</span>
+                                    Meet
+                                </button>
+                                <button class="btn btn-text">
+                                    <span class="material-icons">folder</span>
+                                    Files
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="class-card">
+                        <div class="class-card-header" style="background-color: #8e24aa;">
+                            <h3>Database Management</h3>
+                            <p>CSE 3330 - Prof. Sarah Johnson</p>
+                        </div>
+                        <div class="class-card-content">
+                            <p>Quiz 3 due Wednesday</p>
+                            <div class="class-card-actions">
+                                <button class="btn btn-text">
+                                    <span class="material-icons">videocam</span>
+                                    Meet
+                                </button>
+                                <button class="btn btn-text">
+                                    <span class="material-icons">folder</span>
+                                    Files
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="class-card">
+                        <div class="class-card-header" style="background-color: #e53935;">
+                            <h3>Software Engineering</h3>
+                            <p>CSE 4321 - Prof. David Rodriguez</p>
+                        </div>
+                        <div class="class-card-content">
+                            <p>Team meeting on Thursday</p>
+                            <div class="class-card-actions">
+                                <button class="btn btn-text">
+                                    <span class="material-icons">videocam</span>
+                                    Meet
+                                </button>
+                                <button class="btn btn-text">
+                                    <span class="material-icons">folder</span>
+                                    Files
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal for creating a new class -->
+    <div class="modal" id="create-class-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Create Class</h3>
+                <button class="close-modal">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="create-class-form">
+                    <div class="form-group">
+                        <label for="class-name">Class Name</label>
+                        <input type="text" id="class-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="class-section">Section</label>
+                        <input type="text" id="class-section" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="class-subject">Subject</label>
+                        <input type="text" id="class-subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="class-room">Room</label>
+                        <input type="text" id="class-room">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline close-modal">Cancel</button>
+                <button class="btn btn-primary" id="create-class-submit">Create</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for joining a class -->
+    <div class="modal" id="join-class-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Join Class</h3>
+                <button class="close-modal">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Enter the class code provided by your teacher</p>
+                <form id="join-class-form">
+                    <div class="form-group">
+                        <label for="class-code">Class Code</label>
+                        <input type="text" id="class-code" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline close-modal">Cancel</button>
+                <button class="btn btn-primary" id="join-class-submit">Join</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

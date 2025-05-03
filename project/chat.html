@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniClassroom+ | Discussions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <button id="menu-toggle" class="menu-toggle">
+                <span class="material-icons">menu</span>
+            </button>
+            <div class="logo">
+                <span class="material-icons">school</span>
+                <h1>UniClassroom<span class="plus">+</span></h1>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <span class="material-icons">search</span>
+            </div>
+            <button class="icon-btn" id="notifications-btn">
+                <span class="material-icons">notifications</span>
+                <span class="badge">3</span>
+            </button>
+            <div class="user-profile">
+                <div class="avatar">JS</div>
+                <div class="user-dropdown">
+                    <span class="user-name">John Smith</span>
+                    <span class="material-icons">arrow_drop_down</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar" id="sidebar">
+            <ul class="menu">
+                <li>
+                    <a href="dashboard.html">
+                        <span class="material-icons">dashboard</span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="calendar.html">
+                        <span class="material-icons">calendar_today</span>
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="meetings.html">
+                        <span class="material-icons">videocam</span>
+                        <span>Meetings</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="chat.html">
+                        <span class="material-icons">chat</span>
+                        <span>Discussions</span>
+                    </a>
+                </li>
+                <li class="menu-divider">
+                    <span>TEACHING</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">co_present</span>
+                        <span>To Teach</span>
+                    </a>
+                </li>
+                <li class="menu-divider">
+                    <span>ENROLLED</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">menu_book</span>
+                        <span>To Study</span>
+                    </a>
+                </li>
+                <li class="menu-divider">
+                    <span>ARCHIVED</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">archive</span>
+                        <span>Archived Classes</span>
+                    </a>
+                </li>
+                <li class="menu-footer">
+                    <a href="#">
+                        <span class="material-icons">settings</span>
+                        <span>Settings</span>
+                    </a>
+                    <a href="index.html">
+                        <span class="material-icons">logout</span>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="chat-main">
+            <div class="chat-container">
+                <div class="chat-sidebar">
+                    <div class="chat-sidebar-header">
+                        <h3>Discussions</h3>
+                        <button class="btn btn-icon">
+                            <span class="material-icons">add</span>
+                        </button>
+                    </div>
+                    <div class="chat-search">
+                        <span class="material-icons">search</span>
+                        <input type="text" placeholder="Search discussions...">
+                    </div>
+                    <div class="chat-rooms">
+                        <div class="chat-room-category">
+                            <h4>Classes</h4>
+                        </div>
+                        <div class="chat-room active">
+                            <div class="chat-room-icon" style="background-color: #1a73e8;">
+                                <span class="material-icons">code</span>
+                            </div>
+                            <div class="chat-room-info">
+                                <h5>Advanced Web Development</h5>
+                                <p>Prof. Wilson: Please submit your final...</p>
+                            </div>
+                            <div class="chat-room-meta">
+                                <span class="time">2:45 PM</span>
+                                <span class="badge">3</span>
+                            </div>
+                        </div>
+                        <div class="chat-room">
+                            <div class="chat-room-icon" style="background-color: #00c4b4;">
+                                <span class="material-icons">account_tree</span>
+                            </div>
+                            <div class="chat-room-info">
+                                <h5>Data Structures</h5>
+                                <p>Ryan: Will the review cover binary trees?</p>
+                            </div>
+                            <div class="chat-room-meta">
+                                <span class="time">10:20 AM</span>
+                            </div>
+                        </div>
+                        <div class="chat-room">
+                            <div class="chat-room-icon" style="background-color: #8e24aa;">
+                                <span class="material-icons">storage</span>
+                            </div>
+                            <div class="chat-room-info">
+                                <h5>Database Management</h5>
+                                <p>Prof. Johnson: Don't forget to review...</p>
+                            </div>
+                            <div class="chat-room-meta">
+                                <span class="time">Yesterday</span>
+                            </div>
+                        </div>
+                        <div class="chat-room">
+                            <div class="chat-room-icon" style="background-color: #e53935;">
+                                <span class="material-icons">developer_mode</span>
+                            </div>
+                            <div class="chat-room-info">
+                                <h5>Software Engineering</h5>
+                                <p>Maria: Our team meeting is scheduled for...</p>
+                            </div>
+                            <div class="chat-room-meta">
+                                <span class="time">Yesterday</span>
+                            </div>
+                        </div>
+
+                        <div class="chat-room-category">
+                            <h4>Direct Messages</h4>
+                        </div>
+                        <div class="chat-room">
+                            <div class="avatar">JW</div>
+                            <div class="chat-room-info">
+                                <h5>Prof. Jennifer Wilson</h5>
+                                <p>I'll review your project draft tonight...</p>
+                            </div>
+                            <div class="chat-room-meta">
+                                <span class="time">12:30 PM</span>
+                            </div>
+                        </div>
+                        <div class="chat-room">
+                            <div class="avatar">MP</div>
+                            <div class="chat-room-info">
+                                <h5>Maria Perez</h5>
+                                <p>Can you help me with the JavaScript...</p>
+                            </div>
+                            <div class="chat-room-meta">
+                                <span class="time">Yesterday</span>
+                            </div>
+                        </div>
+                        <div class="chat-room">
+                            <div class="avatar">RJ</div>
+                            <div class="chat-room-info">
+                                <h5>Ryan Johnson</h5>
+                                <p>Thanks for sharing the study notes!</p>
+                            </div>
+                            <div class="chat-room-meta">
+                                <span class="time">Monday</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-content">
+                    <div class="chat-header">
+                        <div class="chat-header-info">
+                            <div class="chat-room-icon" style="background-color: #1a73e8;">
+                                <span class="material-icons">code</span>
+                            </div>
+                            <div>
+                                <h3>Advanced Web Development</h3>
+                                <p>32 members</p>
+                            </div>
+                        </div>
+                        <div class="chat-header-actions">
+                            <button class="btn btn-icon">
+                                <span class="material-icons">search</span>
+                            </button>
+                            <button class="btn btn-icon">
+                                <span class="material-icons">videocam</span>
+                            </button>
+                            <button class="btn btn-icon">
+                                <span class="material-icons">more_vert</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="chat-messages-container">
+                        <div class="chat-date-divider">
+                            <span>Today</span>
+                        </div>
+                        <div class="chat-message instructor">
+                            <div class="avatar">JW</div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <h5>Prof. Jennifer Wilson</h5>
+                                    <span class="role-badge">Instructor</span>
+                                    <span class="time">10:15 AM</span>
+                                </div>
+                                <div class="message-body">
+                                    <p>Good morning everyone! Please remember that your final projects are due tomorrow at 11:59 PM. Make sure to include all required documentation and submit through the assignment portal.</p>
+                                </div>
+                                <div class="message-actions">
+                                    <button class="btn btn-text">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-message">
+                            <div class="avatar">MP</div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <h5>Maria Perez</h5>
+                                    <span class="time">10:22 AM</span>
+                                </div>
+                                <div class="message-body">
+                                    <p>Professor, I'm having an issue with the API integration part of the project. Is there any chance I could schedule a short meeting today to discuss?</p>
+                                </div>
+                                <div class="message-actions">
+                                    <button class="btn btn-text">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-message instructor">
+                            <div class="avatar">JW</div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <h5>Prof. Jennifer Wilson</h5>
+                                    <span class="role-badge">Instructor</span>
+                                    <span class="time">10:45 AM</span>
+                                </div>
+                                <div class="message-body">
+                                    <p>Of course, Maria. I have office hours from 2-4 PM today. Feel free to drop by, or we can set up a quick video call if you prefer.</p>
+                                </div>
+                                <div class="message-actions">
+                                    <button class="btn btn-text">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-message">
+                            <div class="avatar">MP</div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <h5>Maria Perez</h5>
+                                    <span class="time">10:50 AM</span>
+                                </div>
+                                <div class="message-body">
+                                    <p>Thank you! I'll join your office hours at 2:30 PM.</p>
+                                </div>
+                                <div class="message-actions">
+                                    <button class="btn btn-text">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-message">
+                            <div class="avatar">RJ</div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <h5>Ryan Johnson</h5>
+                                    <span class="time">11:15 AM</span>
+                                </div>
+                                <div class="message-body">
+                                    <p>Has anyone successfully implemented OAuth authentication for their project? I'm having trouble with the redirect URI configuration.</p>
+                                </div>
+                                <div class="message-actions">
+                                    <button class="btn btn-text">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-message">
+                            <div class="avatar">LW</div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <h5>Lisa Wang</h5>
+                                    <span class="time">11:32 AM</span>
+                                </div>
+                                <div class="message-body">
+                                    <p>Yes, I got it working! The trick is to make sure your redirect URI exactly matches what you registered in the OAuth provider. I can share my implementation approach if you want.</p>
+                                </div>
+                                <div class="message-actions">
+                                    <button class="btn btn-text">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-message">
+                            <div class="avatar">RJ</div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <h5>Ryan Johnson</h5>
+                                    <span class="time">11:40 AM</span>
+                                </div>
+                                <div class="message-body">
+                                    <p>That would be really helpful, Lisa. Thanks!</p>
+                                </div>
+                                <div class="message-actions">
+                                    <button class="btn btn-text">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-message instructor">
+                            <div class="avatar">JW</div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <h5>Prof. Jennifer Wilson</h5>
+                                    <span class="role-badge">Instructor</span>
+                                    <span class="time">2:45 PM</span>
+                                </div>
+                                <div class="message-body">
+                                    <p>Please submit your final projects on time. Remember to include:</p>
+                                    <ol>
+                                        <li>Source code (frontend and backend)</li>
+                                        <li>Database schema</li>
+                                        <li>API documentation</li>
+                                        <li>User manual</li>
+                                        <li>Deployment instructions</li>
+                                    </ol>
+                                    <p>Let me know if you have any last-minute questions.</p>
+                                </div>
+                                <div class="message-actions">
+                                    <button class="btn btn-text">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-container">
+                        <button class="btn btn-icon">
+                            <span class="material-icons">add</span>
+                        </button>
+                        <div class="chat-input">
+                            <input type="text" placeholder="Type a message...">
+                            <div class="chat-input-actions">
+                                <button class="btn btn-icon">
+                                    <span class="material-icons">attach_file</span>
+                                </button>
+                                <button class="btn btn-icon">
+                                    <span class="material-icons">mood</span>
+                                </button>
+                                <button class="btn btn-primary">
+                                    <span class="material-icons">send</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/chat.js"></script>
+</body>
+</html>

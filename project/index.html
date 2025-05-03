@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniClassroom+ | Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-content">
+            <div class="auth-header">
+                <div class="logo">
+                    <span class="material-icons">school</span>
+                    <h1>UniClassroom<span class="plus">+</span></h1>
+                </div>
+                <p>Your Smart Classroom Management Platform</p>
+            </div>
+            
+            <div class="auth-form-container">
+                <div class="tabs">
+                    <div class="tab active" data-tab="login">Login</div>
+                    <div class="tab" data-tab="signup">Sign Up</div>
+                </div>
+                
+                <div class="tab-content active" id="login-form">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="form-group remember-me">
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember">Remember me</label>
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                
+                <div class="tab-content" id="signup-form">
+                    <form id="signupForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupEmail">Email</label>
+                            <input type="email" id="signupEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupPassword">Password</label>
+                            <input type="password" id="signupPassword" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="role">I am a:</label>
+                            <select id="role" name="role" required>
+                                <option value="" disabled selected>Select your role</option>
+                                <option value="student">Student</option>
+                                <option value="teacher">Teacher</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 UniClassroom+. All rights reserved.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

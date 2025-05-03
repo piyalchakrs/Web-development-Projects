@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniClassroom+ | Advanced Web Development</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/classroom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <button id="menu-toggle" class="menu-toggle">
+                <span class="material-icons">menu</span>
+            </button>
+            <div class="logo">
+                <span class="material-icons">school</span>
+                <h1>UniClassroom<span class="plus">+</span></h1>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <span class="material-icons">search</span>
+            </div>
+            <button class="icon-btn" id="notifications-btn">
+                <span class="material-icons">notifications</span>
+                <span class="badge">3</span>
+            </button>
+            <div class="user-profile">
+                <div class="avatar">JS</div>
+                <div class="user-dropdown">
+                    <span class="user-name">John Smith</span>
+                    <span class="material-icons">arrow_drop_down</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar" id="sidebar">
+            <ul class="menu">
+                <li>
+                    <a href="dashboard.html">
+                        <span class="material-icons">dashboard</span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="calendar.html">
+                        <span class="material-icons">calendar_today</span>
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="meetings.html">
+                        <span class="material-icons">videocam</span>
+                        <span>Meetings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="chat.html">
+                        <span class="material-icons">chat</span>
+                        <span>Discussions</span>
+                    </a>
+                </li>
+                <li class="menu-divider">
+                    <span>TEACHING</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">co_present</span>
+                        <span>To Teach</span>
+                    </a>
+                </li>
+                <li class="menu-divider">
+                    <span>ENROLLED</span>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <span class="material-icons">menu_book</span>
+                        <span>To Study</span>
+                    </a>
+                </li>
+                <li class="menu-divider">
+                    <span>ARCHIVED</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">archive</span>
+                        <span>Archived Classes</span>
+                    </a>
+                </li>
+                <li class="menu-footer">
+                    <a href="#">
+                        <span class="material-icons">settings</span>
+                        <span>Settings</span>
+                    </a>
+                    <a href="index.html">
+                        <span class="material-icons">logout</span>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="classroom-header" style="background-color: #1a73e8;">
+                <div class="classroom-header-content">
+                    <h2>Advanced Web Development</h2>
+                    <p>CSE 4353 - Prof. Jennifer Wilson</p>
+                </div>
+                <div class="classroom-actions">
+                    <button class="btn btn-light">
+                        <span class="material-icons">videocam</span>
+                        Meet Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="classroom-tabs">
+                <div class="tab active" data-tab="stream">Stream</div>
+                <div class="tab" data-tab="assignments">Assignments</div>
+                <div class="tab" data-tab="people">People</div>
+                <div class="tab" data-tab="materials">Materials</div>
+            </div>
+
+            <div class="tab-content active" id="stream-content">
+                <div class="announcement-form">
+                    <div class="form-header">
+                        <div class="avatar">JS</div>
+                        <input type="text" placeholder="Announce something to your class...">
+                    </div>
+                    <div class="form-actions">
+                        <button class="btn btn-text">
+                            <span class="material-icons">attach_file</span>
+                        </button>
+                        <button class="btn btn-text">
+                            <span class="material-icons">insert_link</span>
+                        </button>
+                        <button class="btn btn-text">
+                            <span class="material-icons">insert_photo</span>
+                        </button>
+                        <button class="btn btn-primary">Post</button>
+                    </div>
+                </div>
+
+                <div class="stream-items">
+                    <div class="stream-item">
+                        <div class="stream-item-header">
+                            <div class="avatar">JW</div>
+                            <div class="author-info">
+                                <h4>Prof. Jennifer Wilson</h4>
+                                <p>Yesterday, 3:45 PM</p>
+                            </div>
+                        </div>
+                        <div class="stream-item-content">
+                            <p>Class, please remember that your final projects are due tomorrow at 11:59 PM. Make sure to include all required documentation and submit through the assignment portal. Good luck!</p>
+                        </div>
+                        <div class="stream-item-actions">
+                            <button class="btn btn-text">
+                                <span class="material-icons">comment</span>
+                                Comments
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="stream-item assignment">
+                        <div class="stream-item-header">
+                            <div class="icon-container">
+                                <span class="material-icons">assignment</span>
+                            </div>
+                            <div class="author-info">
+                                <h4>Final Project Submission</h4>
+                                <p>Posted 1 week ago · Due tomorrow at 11:59 PM</p>
+                            </div>
+                        </div>
+                        <div class="stream-item-content">
+                            <p>Submit your completed e-commerce website with documentation. Your submission should include:</p>
+                            <ul>
+                                <li>Source code (frontend and backend)</li>
+                                <li>Database schema</li>
+                                <li>API documentation</li>
+                                <li>User manual</li>
+                                <li>Deployment instructions</li>
+                            </ul>
+                            <p>Points: 100</p>
+                        </div>
+                        <div class="stream-item-actions">
+                            <button class="btn btn-primary">View Assignment</button>
+                        </div>
+                    </div>
+
+                    <div class="stream-item material">
+                        <div class="stream-item-header">
+                            <div class="icon-container">
+                                <span class="material-icons">description</span>
+                            </div>
+                            <div class="author-info">
+                                <h4>Final Project Guidelines</h4>
+                                <p>Posted 2 weeks ago</p>
+                            </div>
+                        </div>
+                        <div class="stream-item-content">
+                            <p>Attached are the detailed guidelines for your final project. Please review carefully.</p>
+                            <div class="attachment">
+                                <span class="material-icons">insert_drive_file</span>
+                                <span>FinalProjectGuidelines.pdf</span>
+                            </div>
+                        </div>
+                        <div class="stream-item-actions">
+                            <button class="btn btn-outline">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="assignments-content">
+                <div class="assignments-header">
+                    <h3>Assignments</h3>
+                    <div class="assignments-filters">
+                        <select>
+                            <option>All assignments</option>
+                            <option>Assigned</option>
+                            <option>Missing</option>
+                            <option>Done</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="assignments-list">
+                    <div class="assignment-item">
+                        <div class="assignment-info">
+                            <h4>Final Project Submission</h4>
+                            <p>Due tomorrow at 11:59 PM • 100 points</p>
+                        </div>
+                        <div class="assignment-status">
+                            <span class="status-label">Not submitted</span>
+                            <button class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+
+                    <div class="assignment-item">
+                        <div class="assignment-info">
+                            <h4>Midterm Project: Frontend Prototype</h4>
+                            <p>Due Oct 15 • 50 points</p>
+                        </div>
+                        <div class="assignment-status">
+                            <span class="status-label submitted">Submitted</span>
+                            <span class="grade">45/50</span>
+                        </div>
+                    </div>
+
+                    <div class="assignment-item">
+                        <div class="assignment-info">
+                            <h4>Assignment 3: API Integration</h4>
+                            <p>Due Sep 30 • 30 points</p>
+                        </div>
+                        <div class="assignment-status">
+                            <span class="status-label submitted">Submitted</span>
+                            <span class="grade">28/30</span>
+                        </div>
+                    </div>
+
+                    <div class="assignment-item">
+                        <div class="assignment-info">
+                            <h4>Assignment 2: Responsive Design</h4>
+                            <p>Due Sep 15 • 25 points</p>
+                        </div>
+                        <div class="assignment-status">
+                            <span class="status-label submitted">Submitted</span>
+                            <span class="grade">25/25</span>
+                        </div>
+                    </div>
+
+                    <div class="assignment-item">
+                        <div class="assignment-info">
+                            <h4>Assignment 1: HTML/CSS Basics</h4>
+                            <p>Due Sep 1 • 20 points</p>
+                        </div>
+                        <div class="assignment-status">
+                            <span class="status-label submitted">Submitted</span>
+                            <span class="grade">20/20</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="people-content">
+                <div class="people-section">
+                    <div class="people-header">
+                        <h3>Teachers</h3>
+                    </div>
+                    <div class="people-list">
+                        <div class="person-item">
+                            <div class="avatar">JW</div>
+                            <div class="person-info">
+                                <h4>Jennifer Wilson</h4>
+                                <p>Professor</p>
+                            </div>
+                        </div>
+                        <div class="person-item">
+                            <div class="avatar">AL</div>
+                            <div class="person-info">
+                                <h4>Andrew Lee</h4>
+                                <p>Teaching Assistant</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="people-section">
+                    <div class="people-header">
+                        <h3>Students (28)</h3>
+                    </div>
+                    <div class="people-list">
+                        <div class="person-item">
+                            <div class="avatar">JS</div>
+                            <div class="person-info">
+                                <h4>John Smith</h4>
+                                <p>You</p>
+                            </div>
+                        </div>
+                        <div class="person-item">
+                            <div class="avatar">MP</div>
+                            <div class="person-info">
+                                <h4>Maria Perez</h4>
+                                <p>Student</p>
+                            </div>
+                        </div>
+                        <div class="person-item">
+                            <div class="avatar">RJ</div>
+                            <div class="person-info">
+                                <h4>Ryan Johnson</h4>
+                                <p>Student</p>
+                            </div>
+                        </div>
+                        <div class="person-item">
+                            <div class="avatar">LW</div>
+                            <div class="person-info">
+                                <h4>Lisa Wang</h4>
+                                <p>Student</p>
+                            </div>
+                        </div>
+                        <div class="show-more">
+                            <button class="btn btn-text">Show all students</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="materials-content">
+                <div class="materials-header">
+                    <h3>Course Materials</h3>
+                    <button class="btn btn-primary">
+                        <span class="material-icons">add</span>
+                        Add Material
+                    </button>
+                </div>
+
+                <div class="materials-list">
+                    <div class="materials-topic">
+                        <h4>Course Resources</h4>
+                        <div class="material-item">
+                            <span class="material-icons">description</span>
+                            <div class="material-info">
+                                <h5>Syllabus</h5>
+                                <p>PDF • Added Aug 25</p>
+                            </div>
+                            <button class="btn btn-text">
+                                <span class="material-icons">download</span>
+                            </button>
+                        </div>
+                        <div class="material-item">
+                            <span class="material-icons">description</span>
+                            <div class="material-info">
+                                <h5>Final Project Guidelines</h5>
+                                <p>PDF • Added Oct 20</p>
+                            </div>
+                            <button class="btn btn-text">
+                                <span class="material-icons">download</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="materials-topic">
+                        <h4>Week 10: Frontend Frameworks</h4>
+                        <div class="material-item">
+                            <span class="material-icons">slideshow</span>
+                            <div class="material-info">
+                                <h5>React Fundamentals</h5>
+                                <p>PPTX • Added Oct 18</p>
+                            </div>
+                            <button class="btn btn-text">
+                                <span class="material-icons">download</span>
+                            </button>
+                        </div>
+                        <div class="material-item">
+                            <span class="material-icons">code</span>
+                            <div class="material-info">
+                                <h5>React Demo Code</h5>
+                                <p>ZIP • Added Oct 19</p>
+                            </div>
+                            <button class="btn btn-text">
+                                <span class="material-icons">download</span>
+                            </button>
+                        </div>
+                        <div class="material-item">
+                            <span class="material-icons">link</span>
+                            <div class="material-info">
+                                <h5>React Documentation</h5>
+                                <p>URL • Added Oct 18</p>
+                            </div>
+                            <button class="btn btn-text">
+                                <span class="material-icons">open_in_new</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="materials-topic">
+                        <h4>Week 9: API Integration</h4>
+                        <div class="material-item">
+                            <span class="material-icons">slideshow</span>
+                            <div class="material-info">
+                                <h5>RESTful APIs</h5>
+                                <p>PPTX • Added Oct 11</p>
+                            </div>
+                            <button class="btn btn-text">
+                                <span class="material-icons">download</span>
+                            </button>
+                        </div>
+                        <div class="material-item">
+                            <span class="material-icons">video_library</span>
+                            <div class="material-info">
+                                <h5>API Demo Recording</h5>
+                                <p>MP4 • Added Oct 12</p>
+                            </div>
+                            <button class="btn btn-text">
+                                <span class="material-icons">play_circle</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/classroom.js"></script>
+</body>
+</html>

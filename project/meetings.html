@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniClassroom+ | Meetings</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/meetings.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <button id="menu-toggle" class="menu-toggle">
+                <span class="material-icons">menu</span>
+            </button>
+            <div class="logo">
+                <span class="material-icons">school</span>
+                <h1>UniClassroom<span class="plus">+</span></h1>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <span class="material-icons">search</span>
+            </div>
+            <button class="icon-btn" id="notifications-btn">
+                <span class="material-icons">notifications</span>
+                <span class="badge">3</span>
+            </button>
+            <div class="user-profile">
+                <div class="avatar">JS</div>
+                <div class="user-dropdown">
+                    <span class="user-name">John Smith</span>
+                    <span class="material-icons">arrow_drop_down</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar" id="sidebar">
+            <ul class="menu">
+                <li>
+                    <a href="dashboard.html">
+                        <span class="material-icons">dashboard</span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="calendar.html">
+                        <span class="material-icons">calendar_today</span>
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="meetings.html">
+                        <span class="material-icons">videocam</span>
+                        <span>Meetings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="chat.html">
+                        <span class="material-icons">chat</span>
+                        <span>Discussions</span>
+                    </a>
+                </li>
+                <li class="menu-divider">
+                    <span>TEACHING</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">co_present</span>
+                        <span>To Teach</span>
+                    </a>
+                </li>
+                <li class="menu-divider">
+                    <span>ENROLLED</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">menu_book</span>
+                        <span>To Study</span>
+                    </a>
+                </li>
+                <li class="menu-divider">
+                    <span>ARCHIVED</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">archive</span>
+                        <span>Archived Classes</span>
+                    </a>
+                </li>
+                <li class="menu-footer">
+                    <a href="#">
+                        <span class="material-icons">settings</span>
+                        <span>Settings</span>
+                    </a>
+                    <a href="index.html">
+                        <span class="material-icons">logout</span>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="page-header">
+                <h2>Meetings</h2>
+                <div class="action-buttons">
+                    <button class="btn btn-outline" id="join-meeting-btn">
+                        <span class="material-icons">login</span>
+                        Join Meeting
+                    </button>
+                    <button class="btn btn-primary" id="new-meeting-btn">
+                        <span class="material-icons">add</span>
+                        New Meeting
+                    </button>
+                </div>
+            </div>
+
+            <section class="upcoming-meetings-section">
+                <h3>Upcoming Meetings</h3>
+                <div class="meeting-cards">
+                    <div class="meeting-card">
+                        <div class="meeting-card-header">
+                            <span class="material-icons">videocam</span>
+                            <h4>Data Structures Review Session</h4>
+                        </div>
+                        <div class="meeting-card-content">
+                            <p class="meeting-info">
+                                <span class="material-icons">schedule</span>
+                                <span>Today, 3:30 PM - 5:00 PM</span>
+                            </p>
+                            <p class="meeting-info">
+                                <span class="material-icons">person</span>
+                                <span>Prof. Michael Chen</span>
+                            </p>
+                            <p class="meeting-description">Online review session for the upcoming midterm examination.</p>
+                        </div>
+                        <div class="meeting-card-actions">
+                            <button class="btn btn-primary">Join Now</button>
+                        </div>
+                    </div>
+
+                    <div class="meeting-card">
+                        <div class="meeting-card-header">
+                            <span class="material-icons">videocam</span>
+                            <h4>Software Engineering Team Meeting</h4>
+                        </div>
+                        <div class="meeting-card-content">
+                            <p class="meeting-info">
+                                <span class="material-icons">schedule</span>
+                                <span>Thursday, 2:00 PM - 3:30 PM</span>
+                            </p>
+                            <p class="meeting-info">
+                                <span class="material-icons">group</span>
+                                <span>Project Team 3</span>
+                            </p>
+                            <p class="meeting-description">Weekly team meeting to discuss project progress and next steps.</p>
+                        </div>
+                        <div class="meeting-card-actions">
+                            <button class="btn btn-outline">Add to Calendar</button>
+                        </div>
+                    </div>
+
+                    <div class="meeting-card">
+                        <div class="meeting-card-header">
+                            <span class="material-icons">videocam</span>
+                            <h4>Database Final Project Consultation</h4>
+                        </div>
+                        <div class="meeting-card-content">
+                            <p class="meeting-info">
+                                <span class="material-icons">schedule</span>
+                                <span>Friday, 10:00 AM - 11:00 AM</span>
+                            </p>
+                            <p class="meeting-info">
+                                <span class="material-icons">person</span>
+                                <span>Prof. Sarah Johnson</span>
+                            </p>
+                            <p class="meeting-description">Office hours for questions about the final database project.</p>
+                        </div>
+                        <div class="meeting-card-actions">
+                            <button class="btn btn-outline">Add to Calendar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recent-meetings-section">
+                <h3>Recent Meetings</h3>
+                <div class="meeting-list">
+                    <div class="meeting-list-item">
+                        <div class="meeting-icon">
+                            <span class="material-icons">history</span>
+                        </div>
+                        <div class="meeting-list-content">
+                            <h4>Advanced Web Development - Project Review</h4>
+                            <p>Yesterday, 2:00 PM - 3:30 PM • 14 participants</p>
+                        </div>
+                        <div class="meeting-list-actions">
+                            <button class="btn btn-text">
+                                <span class="material-icons">play_circle_outline</span>
+                                View Recording
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="meeting-list-item">
+                        <div class="meeting-icon">
+                            <span class="material-icons">history</span>
+                        </div>
+                        <div class="meeting-list-content">
+                            <h4>Software Engineering Team Meeting</h4>
+                            <p>Oct 19, 2:00 PM - 3:30 PM • 6 participants</p>
+                        </div>
+                        <div class="meeting-list-actions">
+                            <button class="btn btn-text">
+                                <span class="material-icons">play_circle_outline</span>
+                                View Recording
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="meeting-list-item">
+                        <div class="meeting-icon">
+                            <span class="material-icons">history</span>
+                        </div>
+                        <div class="meeting-list-content">
+                            <h4>Database Management - SQL Queries Workshop</h4>
+                            <p>Oct 17, 3:30 PM - 5:00 PM • 28 participants</p>
+                        </div>
+                        <div class="meeting-list-actions">
+                            <button class="btn btn-text">
+                                <span class="material-icons">play_circle_outline</span>
+                                View Recording
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal for creating a new meeting -->
+    <div class="modal" id="new-meeting-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>New Meeting</h3>
+                <button class="close-modal">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="new-meeting-form">
+                    <div class="form-group">
+                        <label for="meeting-title">Meeting Title</label>
+                        <input type="text" id="meeting-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="meeting-class">Class</label>
+                        <select id="meeting-class" required>
+                            <option value="" disabled selected>Select a class</option>
+                            <option value="web-dev">Advanced Web Development</option>
+                            <option value="data-structures">Data Structures</option>
+                            <option value="database">Database Management</option>
+                            <option value="software-eng">Software Engineering</option>
+                        </select>
+                    </div>
+                    <div class="form-group date-time-group">
+                        <div>
+                            <label for="meeting-date">Date</label>
+                            <input type="date" id="meeting-date" required>
+                        </div>
+                        <div>
+                            <label for="meeting-time">Time</label>
+                            <input type="time" id="meeting-time" required>
+                        </div>
+                    </div>
+                    <div class="form-group date-time-group">
+                        <div>
+                            <label for="meeting-duration">Duration</label>
+                            <select id="meeting-duration" required>
+                                <option value="30">30 minutes</option>
+                                <option value="60" selected>1 hour</option>
+                                <option value="90">1.5 hours</option>
+                                <option value="120">2 hours</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="meeting-type">Meeting Type</label>
+                            <select id="meeting-type" required>
+                                <option value="class">Class Session</option>
+                                <option value="review">Review Session</option>
+                                <option value="team">Team Meeting</option>
+                                <option value="office">Office Hours</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="meeting-description">Description</label>
+                        <textarea id="meeting-description" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline close-modal">Cancel</button>
+                <button class="btn btn-primary" id="create-meeting-submit">Create Meeting</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for joining a meeting -->
+    <div class="modal" id="join-meeting-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Join Meeting</h3>
+                <button class="close-modal">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Enter the meeting code provided by the host</p>
+                <form id="join-meeting-form">
+                    <div class="form-group">
+                        <label for="meeting-code">Meeting Code</label>
+                        <input type="text" id="meeting-code" required placeholder="Enter code (e.g., abc-defg-hij)">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline close-modal">Cancel</button>
+                <button class="btn btn-primary" id="join-meeting-submit">Join</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Meeting Room Placeholder (hidden by default) -->
+    <div class="meeting-room" id="meeting-room">
+        <div class="meeting-room-header">
+            <h3>Data Structures Review Session</h3>
+            <div class="meeting-controls">
+                <button class="btn btn-icon meeting-control">
+                    <span class="material-icons">mic</span>
+                </button>
+                <button class="btn btn-icon meeting-control">
+                    <span class="material-icons">videocam</span>
+                </button>
+                <button class="btn btn-icon meeting-control">
+                    <span class="material-icons">present_to_all</span>
+                </button>
+                <button class="btn btn-icon meeting-control">
+                    <span class="material-icons">more_vert</span>
+                </button>
+                <button class="btn btn-danger" id="end-meeting-btn">
+                    <span class="material-icons">call_end</span>
+                </button>
+            </div>
+        </div>
+        <div class="meeting-room-content">
+            <div class="video-grid">
+                <div class="video-container main-video">
+                    <div class="video-placeholder">
+                        <span class="material-icons">person</span>
+                        <p>Prof. Michael Chen</p>
+                    </div>
+                    <div class="video-info">
+                        <span class="participant-name">Prof. Michael Chen</span>
+                        <span class="material-icons mic-status">mic</span>
+                    </div>
+                </div>
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <span class="material-icons">person</span>
+                        <p>You</p>
+                    </div>
+                    <div class="video-info">
+                        <span class="participant-name">You</span>
+                        <span class="material-icons mic-status">mic_off</span>
+                    </div>
+                </div>
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <span class="material-icons">person</span>
+                        <p>Maria Perez</p>
+                    </div>
+                    <div class="video-info">
+                        <span class="participant-name">Maria Perez</span>
+                        <span class="material-icons mic-status">mic_off</span>
+                    </div>
+                </div>
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <span class="material-icons">person</span>
+                        <p>Ryan Johnson</p>
+                    </div>
+                    <div class="video-info">
+                        <span class="participant-name">Ryan Johnson</span>
+                        <span class="material-icons mic-status">mic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="meeting-room-sidebar">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="participants">
+                    <span class="material-icons">people</span>
+                    <span>Participants (12)</span>
+                </button>
+                <button class="tab-button" data-tab="chat">
+                    <span class="material-icons">chat</span>
+                    <span>Chat</span>
+                </button>
+            </div>
+            <div class="tab-content active" id="participants-tab">
+                <div class="participants-list">
+                    <div class="participant-item host">
+                        <div class="avatar">MC</div>
+                        <div class="participant-info">
+                            <p>Prof. Michael Chen</p>
+                            <span class="role-badge">Host</span>
+                        </div>
+                        <div class="participant-status">
+                            <span class="material-icons">mic</span>
+                        </div>
+                    </div>
+                    <div class="participant-item">
+                        <div class="avatar">JS</div>
+                        <div class="participant-info">
+                            <p>John Smith</p>
+                            <span class="role-badge">You</span>
+                        </div>
+                        <div class="participant-status">
+                            <span class="material-icons">mic_off</span>
+                        </div>
+                    </div>
+                    <div class="participant-item">
+                        <div class="avatar">MP</div>
+                        <div class="participant-info">
+                            <p>Maria Perez</p>
+                        </div>
+                        <div class="participant-status">
+                            <span class="material-icons">mic_off</span>
+                        </div>
+                    </div>
+                    <div class="participant-item">
+                        <div class="avatar">RJ</div>
+                        <div class="participant-info">
+                            <p>Ryan Johnson</p>
+                        </div>
+                        <div class="participant-status">
+                            <span class="material-icons">mic</span>
+                        </div>
+                    </div>
+                    <div class="participant-item">
+                        <div class="avatar">LW</div>
+                        <div class="participant-info">
+                            <p>Lisa Wang</p>
+                        </div>
+                        <div class="participant-status">
+                            <span class="material-icons">mic_off</span>
+                        </div>
+                    </div>
+                    <div class="show-more">
+                        <button class="btn btn-text">Show all participants</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="chat-tab">
+                <div class="chat-messages">
+                    <div class="chat-message">
+                        <div class="message-sender">
+                            <div class="avatar small">MC</div>
+                            <div class="sender-info">
+                                <p class="sender-name">Prof. Michael Chen</p>
+                                <p class="message-time">3:30 PM</p>
+                            </div>
+                        </div>
+                        <div class="message-content">
+                            <p>Welcome everyone to our review session. We'll be covering topics from chapters 7-10 today.</p>
+                        </div>
+                    </div>
+                    <div class="chat-message">
+                        <div class="message-sender">
+                            <div class="avatar small">MP</div>
+                            <div class="sender-info">
+                                <p class="sender-name">Maria Perez</p>
+                                <p class="message-time">3:32 PM</p>
+                            </div>
+                        </div>
+                        <div class="message-content">
+                            <p>Will you be going over the tree traversal algorithms again?</p>
+                        </div>
+                    </div>
+                    <div class="chat-message">
+                        <div class="message-sender">
+                            <div class="avatar small">MC</div>
+                            <div class="sender-info">
+                                <p class="sender-name">Prof. Michael Chen</p>
+                                <p class="message-time">3:33 PM</p>
+                            </div>
+                        </div>
+                        <div class="message-content">
+                            <p>Yes, Maria. We'll cover both BFS and DFS approaches.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Type a message...">
+                    <button class="btn btn-icon">
+                        <span class="material-icons">send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/meetings.js"></script>
+</body>
+</html>

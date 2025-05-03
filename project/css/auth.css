@@ -1,0 +1,138 @@
+/* Auth Specific Styles */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-6);
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+}
+
+.auth-content {
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    width: 100%;
+    max-width: 28rem;
+    overflow: hidden;
+    animation: fade-in-up 0.6s ease-out;
+}
+
+.auth-header {
+    text-align: center;
+    padding: var(--space-8) var(--space-6) var(--space-6);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-2);
+}
+
+.logo h1 {
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 0;
+}
+
+.logo .plus {
+    color: var(--accent);
+}
+
+.logo .material-icons {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.auth-header p {
+    color: var(--text-secondary);
+    margin-bottom: 0;
+}
+
+.auth-form-container {
+    padding: 0 var(--space-6) var(--space-8);
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: var(--space-6);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: var(--space-3) 0;
+    cursor: pointer;
+    color: var(--text-secondary);
+    font-weight: 500;
+    position: relative;
+    transition: color var(--transition-fast);
+}
+
+.tab:hover {
+    color: var(--primary);
+}
+
+.tab.active {
+    color: var(--primary);
+}
+
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--primary);
+    border-radius: var(--radius-full);
+}
+
+.tab-content {
+    display: none;
+    animation: fade-in var(--transition-normal) forwards;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.auth-form-container .btn {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    margin-top: var(--space-4);
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remember-me input[type="checkbox"] {
+    width: auto;
+    margin-right: var(--space-2);
+}
+
+.remember-me label {
+    display: inline;
+    margin-bottom: 0;
+}
+
+.forgot-password {
+    font-size: var(--font-size-sm);
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
